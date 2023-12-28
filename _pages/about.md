@@ -19,10 +19,10 @@ redirect_from:
 
 I'm a senior student at Institute for Interdisciplinary Information Sciences, Tsinghua University. My research interest includes Reinforcement Learning and Robot Learning. Specifically, I'm curious about how to improve RL algorithms that could be applied directly to real-world robot, where Sim2Real gap will not happen. 
 
-# 🔥 News
+# News
 - *2023.08*: &nbsp;🎉🎉 Paper *Finetuning Offline World Models in the Real World* [\[Project Page\]](https://www.yunhaifeng.com/FOWM/) accepted at CoRL 2023.
 
-# 📝 Publications 
+# Publications 
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -38,18 +38,19 @@ I'm a senior student at Institute for Interdisciplinary Information Sciences, Ts
 
 - [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
 
-# 🎖 Honors and Awards
-- *2023.10* Comprehensive Excellence Scholarship
-- *2021-2022* School-level Scholarships
-- *2019.11* First Prize (#15), Chinese Physics Olympiad
+# Honors and Awards
+- *2023* Comprehensive Excellence Scholarship
+- *2022* School-level Scholarships
+- *2021* School-level Scholarships
+- *2019* First Prize (#15), Chinese Physics Olympiad
 
-# 📖 Educations
+# Educations
 - *2020.09 - now*, Institute for Interdsciplinary Information Sciences, Tsinghua University.
 
-# 💬 Invited Talks
+# Invited Talks
 - *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 - *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/)
 
-# 💻 Internships
+# Internships
 - *2023.09 - now*, 4Paradigm, China.
 - *2023.02 - 2023.08*, Wang Group, UC San Diego.
