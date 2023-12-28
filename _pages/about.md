@@ -29,7 +29,7 @@ I'm a senior student at Institute for Interdisciplinary Information Sciences, Ts
 
 [Finetuning Offline World Models in the Real World](https://arxiv.org/pdf/2310.16029.pdf)
 
-**Kaiming He**, Xiangyu Zhang, Shaoqing Ren, Jian Sun
+Yunhai Feng\*, Nicklas Hansen\*, **Ziyan Xiong**\*, Chandramouli Rajagopalan, Xiaolong Wang
 
 [**Project**](https://www.yunhaifeng.com/FOWM/) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
