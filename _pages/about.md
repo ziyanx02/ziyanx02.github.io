@@ -20,8 +20,7 @@ redirect_from:
 I'm a senior student at Institute for Interdisciplinary Information Sciences, Tsinghua University. My research interest includes Reinforcement Learning and Robot Learning. Specifically, I'm curious about how to improve RL algorithms that could be applied directly to real-world robot, where Sim2Real gap will not happen. 
 
 # 🔥 News
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- *2023.08*: &nbsp;🎉🎉 Paper *Finetuning Offline World Models in the Real World* accepted at CoRL 2023.
 
 # 📝 Publications 
 
@@ -40,8 +39,9 @@ I'm a senior student at Institute for Interdisciplinary Information Sciences, Ts
 - [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
 
 # 🎖 Honors and Awards
-- *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- *2023.10* Comprehensive Excellence Scholarship
+- *2021-2022* School-level Scholarships
+- *2019.11* First Prize (#15), Chinese Physics Olympiad
 
 # 📖 Educations
 - *2020.09 - now*, Institute for Interdsciplinary Information Sciences, Tsinghua University.
@@ -51,4 +51,5 @@ I'm a senior student at Institute for Interdisciplinary Information Sciences, Ts
 - *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/) -->
 
 # 💻 Internships
-- *2019.05 - 2020.02*, [Lorem](https://github.com/), China.
+- *2023.09 - now*, 4Paradigm<--, [Lorem](https://github.com/)-->, China.
+- *2023.02 - 2023.08*, Wang Group, UC San Diego.
