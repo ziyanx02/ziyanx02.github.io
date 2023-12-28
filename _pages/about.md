@@ -54,5 +54,5 @@ I'm a senior student at Institute for Interdisciplinary Information Sciences, Ts
 -->
 
 # Internships
-- *2023.09 - now*     | 4Paradigm, China.
-- *2023.02 - 2023.08* | Wang Group, UC San Diego.
+- *2023.09 - now*, 4Paradigm, China.
+- *2023.02 - 2023.08*, Wang Group, UC San Diego.
