@@ -17,11 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Sorry but the homepage is under construction :)
-
-It will be finished soon!
-
-<!-- My research interest includes neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>). -->
+I'm a senior student at Institute of Interdisciplinary Information Science, Tsinghua University. My research interest includes Reinforcement Learning and Robot Learning. Specifically, I'm curious about how to improve RL algorithms that could be applied directly to real-world robot, where Sim2Real gap will not happen. 
 
 <!-- 
 # 🔥 News
