@@ -24,7 +24,7 @@ I'm a senior student at Institute for Interdisciplinary Information Sciences, Ts
 
 # Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CoRL 2023 Oral</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CoRL 2023 Oral</div><img src='images/image.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Finetuning Offline World Models in the Real World](https://arxiv.org/pdf/2310.16029.pdf)
