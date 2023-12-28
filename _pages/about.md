@@ -17,7 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I'm a senior student at Institute for Interdisciplinary Information Sciences, Tsinghua University. My research interest includes Reinforcement Learning and Robot Learning. Specifically, I'm curious about how to improve RL algorithms that could be applied directly to real-world robot, where Sim2Real gap will not happen. 
+I'm a senior student at Institute for Interdisciplinary Information Sciences, Tsinghua University. My research interest includes Reinforcement Learning and Robot Learning. Specifically, I'm curious about how to improve RL algorithms that could be applied directly to real-world robot, where Sim2Real gap will not appear.
 
 # News
 - *2023.08*: &nbsp;🎉🎉 Paper *Finetuning Offline World Models in the Real World* accepted at CoRL 2023.
@@ -32,7 +32,7 @@ I'm a senior student at Institute for Interdisciplinary Information Sciences, Ts
 Yunhai Feng\*, Nicklas Hansen\*, **Ziyan Xiong**\*, Chandramouli Rajagopalan, Xiaolong Wang
 
 [**Project**](https://www.yunhaifeng.com/FOWM/) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- We worked on accelerating the learning through using collected trajectories to pre-train the policy and world model. 
 </div>
 </div>
 
