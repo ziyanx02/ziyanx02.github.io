@@ -20,11 +20,11 @@ redirect_from:
 I'm a senior student at Institute for Interdisciplinary Information Sciences, Tsinghua University. My research interest includes Reinforcement Learning and Robot Learning. Specifically, I'm curious about how to improve RL algorithms that could be applied directly to real-world robot, where Sim2Real gap will not happen. 
 
 # News
-- *2023.08*: &nbsp;🎉🎉 Paper *Finetuning Offline World Models in the Real World* [\[Project Page\]](https://www.yunhaifeng.com/FOWM/) accepted at CoRL 2023.
+- *2023.08*: &nbsp;🎉🎉 Paper *Finetuning Offline World Models in the Real World* accepted at CoRL 2023.
 
 # Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CoRL 2023 Oral</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Finetuning Offline World Models in the Real World](https://arxiv.org/pdf/2310.16029.pdf)
