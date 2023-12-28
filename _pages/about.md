@@ -47,9 +47,11 @@ I'm a senior student at Institute for Interdisciplinary Information Sciences, Ts
 # Educations
 - *2020.09 - now*, Institute for Interdsciplinary Information Sciences, Tsinghua University.
 
+<!--
 # Invited Talks
 - *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 - *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.   \| [\[video\]](https://github.com/)
+-->
 
 # Internships
 - *2023.09 - now*     | 4Paradigm, China.
