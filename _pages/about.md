@@ -52,5 +52,5 @@ I'm a senior student at Institute for Interdisciplinary Information Sciences, Ts
 - *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/)
 
 # Internships
-- *2023.09 - now*, 4Paradigm, China.
+- *2023.09 - now    *, 4Paradigm, China.
 - *2023.02 - 2023.08*, Wang Group, UC San Diego.
