@@ -44,7 +44,7 @@ Feel free to contact me at ziyanx02[at]gmail[dot]com.
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CoRL 2023 Oral</div><img src='images/fowm.png' alt="sym" width="50%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CoRL 2023 Oral</div><img src='images/fowm.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **Finetuning Offline World Models in the Real World**
