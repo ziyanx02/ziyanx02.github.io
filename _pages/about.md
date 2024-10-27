@@ -17,7 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I’m an undergraduate student at the Institute for Interdisciplinary Information Sciences, Tsinghua University (a.k.a. **Yao Class**, named after Andrew Chi-Chih Yao). I have an upcoming internship at UMass Amherst starting on Dec. 1st, advised by Prof. [Chuang Gan](https://people.csail.mit.edu/ganchuang/).
+Hi, I’m **Ziyan Xiong (熊子言)**, an undergraduate student at the Institute for Interdisciplinary Information Sciences, Tsinghua University (a.k.a. **Yao Class**, named after Andrew Chi-Chih Yao). I have an upcoming internship at UMass Amherst starting on Dec. 1st, advised by Prof. [Chuang Gan](https://people.csail.mit.edu/ganchuang/).
 
 **My research interests lie in the field of robot learning**, specifically, I’m dedicated to developing innovative methodologies for **efficient robot learning**.
  
