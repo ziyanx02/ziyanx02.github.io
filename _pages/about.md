@@ -25,7 +25,7 @@ I’m currently working on locomotion learning. Previously, I collaborated with 
 
 In my free time, I enjoy landscape photography and film photography, currently using Nikon D810 and Nikon FM. 
 
-Feel free to contact me at ziyanx02[at]gmail[dot]com.
+Feel free to contact me at **ziyanx02[at]gmail[dot]com**.
 
 # News
 - *2024.06*: &nbsp;🎉🎉 Paper *MQE: Unleashing the Power of Interaction with Multi-agent Quadruped Environment* accepted at IROS 2024.
