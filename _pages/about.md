@@ -41,7 +41,6 @@ Zhou Xian\*, [...], **Ziyan Xiong**\*, [...], Chuang Gan
 
 [[Website]](https://genesis-embodied-ai.github.io/) [[Code]](https://github.com/Genesis-Embodied-AI/Genesis)
 </div>
-</div>
 
 <div class='paper-box-text' markdown="1">
 
@@ -50,7 +49,6 @@ Zhou Xian\*, [...], **Ziyan Xiong**\*, [...], Chuang Gan
 **Ziyan Xiong**, Bo Chen, Shiyu Huang, Wei-Wei Tu, Zhaofeng He, Yang Gao
 
 [[Website]](https://ziyanx02.github.io/multiagent-quadruped-environment/) [[Code]](https://github.com/ziyanx02/multiagent-quadruped-environment) [[arXiv]](https://arxiv.org/pdf/2403.16015)
-</div>
 </div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CoRL 2023 Oral</div><img src='images/fowm.png' alt="sym" width="100%"></div></div>
