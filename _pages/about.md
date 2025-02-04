@@ -33,7 +33,16 @@ Feel free to contact me at **ziyanx02[at]gmail[dot]com**.
 
 # Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IROS 2024</div><img src='images/mqe.jpg' alt="sym" width="50%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+**Genesis: A Generative and Universal Physics Engine for Robotics and Beyond**
+
+Zhou Xian\*, [...], **Ziyan Xiong**\*, [...], Chuang Gan
+
+[[Website]](https://genesis-embodied-ai.github.io/) [[Code]](https://github.com/Genesis-Embodied-AI/Genesis)
+</div>
+</div>
+
 <div class='paper-box-text' markdown="1">
 
 **MQE: Unleashing the Power of Interaction with Multi-agent Quadruped Environment**
