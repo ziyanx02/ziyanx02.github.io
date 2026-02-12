@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ziyan Xiong | Homepage</title>
+    <meta
+      name="description"
+      content="Ziyan Xiong's homepage"
+    />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <!-- Fixed, non-scrolling background -->
+    <div id="bg" class="bg" aria-hidden="true">
+      <div class="bg__vignette"></div>
+      <div class="bg__noise"></div>
+    </div>
+
+    <!-- Click zones: left/right 1/10 for prev/next background photo -->
+    <button
+      id="bgPrev"
+      class="bgNav bgNav--prev"
+      type="button"
+      aria-label="Previous background photo"
+      title="Previous"
+    ></button>
+    <button
+      id="bgNext"
+      class="bgNav bgNav--next"
+      type="button"
+      aria-label="Next background photo"
+      title="Next"
+    ></button>
+
+    <!-- Center 4/5 translucent lane (under content, above background) -->
+    <div class="centerLane" aria-hidden="true"></div>
+
+    <!-- Top floating bar -->
+    <header class="topbar" role="banner">
+      <div class="topbar__inner">
+        <div>
+          <a class="brand" href="#bio" aria-label="Go to Home">
+            <span class="brand__name">Ziyan Xiong</span>
+            <span class="brand__tag">PhD Student</span>
+          </a>
+        </div>
+        <nav class="topbar__right" aria-label="Primary">
+          <a class="navlink" href="#bio">Home</a>
+          <a class="navlink" href="#publications">Publication</a>
+          <a class="navlink" href="#projects">Project</a>
+          <a class="navlink" href="#internship">Internship</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page" role="main">
+      <!-- Page 1: Bio (first viewport height) -->
+      <section id="bio" class="section section--bio">
+        <div class="contentCard">
+          <div class="list__item bioBlock">
+            <div class="bioGrid">
+              <div class="bioGrid__left">
+                <div class="avatar" aria-hidden="true"></div>
+                <div class="chips chips--left">
+                  <a class="chip chip--icon" href="mailto:your.email@example.com" aria-label="Email" title="Email">
+                    <span class="chip__icon" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" focusable="false">
+                        <path
+                          d="M4 6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v11A2.5 2.5 0 0 1 17.5 20h-11A2.5 2.5 0 0 1 4 17.5v-11Zm2.2-.5 5.46 4.1c.2.15.48.15.68 0L17.8 6H6.2Zm11.8 1.52-4.72 3.55a2.2 2.2 0 0 1-2.56 0L6 7.52V17.5c0 .28.22.5.5.5h11a.5.5 0 0 0 .5-.5V7.52Z"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                  <a
+                    class="chip chip--icon"
+                    href="#"
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="Google Scholar"
+                    title="Google Scholar"
+                  >
+                    <span class="chip__icon" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" focusable="false">
+                        <path
+                          d="M12 3 1.8 8.2 12 13.4 22.2 8.2 12 3Zm0 12.1L4.4 11.2V16c0 .3.2.6.5.7l6.6 3.3c.3.2.7.2 1 0l6.6-3.3c.3-.1.5-.4.5-.7v-4.8L12 15.1Z"
+                        />
+                        <path d="M21.2 10.2v6.1a1 1 0 1 0 2 0v-7.1l-2 1Z" />
+                      </svg>
+                    </span>
+                  </a>
+                  <a
+                    class="chip chip--icon"
+                    href="#"
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="GitHub"
+                    title="GitHub"
+                  >
+                    <span class="chip__icon" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" focusable="false">
+                        <path
+                          d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.77.6-3.35-1.17-3.35-1.17-.45-1.15-1.1-1.45-1.1-1.45-.9-.62.07-.6.07-.6 1 .07 1.52 1.03 1.52 1.03.9 1.54 2.35 1.1 2.92.84.09-.65.35-1.1.64-1.35-2.2-.25-4.52-1.1-4.52-4.9 0-1.08.39-1.96 1.03-2.65-.1-.26-.45-1.28.1-2.67 0 0 .84-.27 2.75 1.01a9.6 9.6 0 0 1 5 0c1.9-1.28 2.74-1.01 2.74-1.01.55 1.39.2 2.41.1 2.67.64.69 1.03 1.57 1.03 2.65 0 3.81-2.32 4.65-4.53 4.9.36.31.68.92.68 1.86v2.76c0 .26.18.58.69.48A10 10 0 0 0 12 2Z"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                  <a class="chip chip--icon" href="#" target="_blank" rel="noreferrer" aria-label="CV" title="CV">
+                    <span class="chip__icon" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" focusable="false">
+                        <path
+                          d="M7 3.5A2.5 2.5 0 0 1 9.5 1h6.1c.66 0 1.3.26 1.77.73l3.9 3.9c.47.47.73 1.1.73 1.77V18.5A3.5 3.5 0 0 1 18.5 22h-9A3.5 3.5 0 0 1 6 18.5v-13Zm9 0V6a1 1 0 0 0 1 1h2.5L16 3.5ZM9 11.5a1 1 0 1 1 0-2h6a1 1 0 1 1 0 2H9Zm0 4a1 1 0 1 1 0-2h6a1 1 0 1 1 0 2H9Z"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div>
+                <h1 class="h1">Ziyan Xiong</h1>
+                <p class="subtitle">
+                  Research interests: <b>Robotics</b>, <b>Reinforcement Learning</b>.
+                </p>
+                <p class="p">
+                  I'm a first-year PhD student at the University of Massachusetts Amherst, supervised by <a href="https://people.csail.mit.edu/ganchuang/" target="_blank" rel="noreferrer">Chuang Gan</a>.
+                  My research interests mainly focus on how to how to encapable robots to perform complex tasks in a safe and efficient manner.
+                </p>
+                <div class="hint">
+                  Tip: 点击屏幕 <b>最左/右 1/10</b> 切换背景照片；也支持键盘 <b>← / →</b>。
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="scrollCue" aria-hidden="true">
+          <span class="scrollCue__text">Scroll</span>
+          <span class="scrollCue__line"></span>
+        </div>
+      </section>
+
+      <!-- Page 2+ -->
+      <section id="publications" class="section">
+        <div class="contentCard">
+          <div class="sectionHeader">
+            <h2 class="h2 sectionHeader__title">Publications</h2>
+            <div class="segmented" role="group" aria-label="Publication filter">
+              <button
+                id="pubFilterSelected"
+                class="segmented__btn"
+                type="button"
+                aria-pressed="false"
+                title="Show selected publications"
+              >
+                Selected
+              </button>
+              <button
+                id="pubFilterAll"
+                class="segmented__btn is-active"
+                type="button"
+                aria-pressed="true"
+                title="Show all publications"
+              >
+                All
+              </button>
+            </div>
+          </div>
+          <ul class="list">
+            <li class="list__item" data-selected="true">
+              <div class="itemTitle">
+                ExtremControl: Low-Latency Humanoid Teleoperation with Direct Extremity Control
+              </div>
+              <div class="itemVenue">
+                In Submission
+              </div>
+              <div class="itemMeta"><strong>Ziyan Xiong</strong>*, Lixing Fang*, Junyun Huang*, Kashu Yamazaki, Hao Zhang, Chuang Gan</div>
+              <div class="itemLinks">
+                <a href="https://owenowl.github.io/extremcontrol/static/ExtremControl.pdf" target="_blank" rel="noreferrer">PDF</a>
+                <a href="https://github.com/UMass-Embodied-AGI/Genesis-Humanoid/tree/extremcontrol" target="_blank" rel="noreferrer">Code</a>
+                <a href="https://owenowl.github.io/extremcontrol/" target="_blank" rel="noreferrer">Website</a>
+              </div>
+            </li>
+            <li class="list__item" data-selected="false">
+              <div class="itemTitle">
+                MQE: Unleashing the power of interaction with multi-agent quadruped environment
+              </div>
+              <div class="itemVenue">
+                IROS 2024 (Oral Pitch)
+              </div>
+              <div class="itemMeta"><strong>Ziyan Xiong</strong>, Bo Chen, Shiyu Huang, Wei-Wei Tu, Zhaofeng He, Yang Gao</div>
+              <div class="itemLinks">
+                <a href="https://arxiv.org/abs/2403.16015" target="_blank" rel="noreferrer">PDF</a>
+                <a href="https://github.com/ziyanx02/multiagent-quadruped-environment" target="_blank" rel="noreferrer">Code</a>
+              </div>
+            </li>
+            <li class="list__item" data-selected="false">
+              <div class="itemTitle">
+                Finetuning offline world models in the real world
+              </div>
+              <div class="itemVenue">
+                CoRL 2023 (Oral)
+              </div>
+              <div class="itemMeta">Yunhai Feng*, Nicklas Hansen*, <strong>Ziyan Xiong</strong>*, Chandramouli Rajagopalan, Xiaolong Wang</div>
+              <div class="itemLinks">
+                <a href="https://www.yunhaifeng.com/FOWM/paper.pdf" target="_blank" rel="noreferrer">PDF</a>
+                <a href="https://github.com/yunhaif/fowm" target="_blank" rel="noreferrer">Code</a>
+                <a href="https://www.yunhaifeng.com/FOWM/" target="_blank" rel="noreferrer">Website</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="contentCard">
+          <h2 class="h2">Projects</h2>
+          <div class="cards">
+            <article class="miniCard">
+              <div class="miniCard__title">Genesis Humanoid</div>
+              <div class="miniCard__desc">
+                An all-in-one humanoid research platform on top of Genesis.
+              </div>
+              <div class="miniCard__links">
+                <a href="https://github.com/UMass-Embodied-AGI/Genesis-Humanoid" target="_blank" rel="noreferrer">Code</a>
+              </div>
+            </article>
+            <article class="miniCard">
+              <div class="miniCard__title">Genesis</div>
+              <div class="miniCard__desc">
+                A generative world for general-purpose robotics & embodied AI learning.
+              </div>
+              <div class="miniCard__links">
+                <a href="https://github.com/Genesis-Embodied-AI/Genesis" target="_blank" rel="noreferrer">Code</a>
+                <a href="https://genesis-embodied-ai.github.io/" target="_blank" rel="noreferrer">Website</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="internship" class="section">
+        <div class="contentCard">
+          <h2 class="h2">Internship</h2>
+          <ul class="list">
+            <li class="list__item">
+              <div class="itemTitle">
+                Embodied AGI Lab — Research Assistant
+                <span class="itemVenue">2024.11 - 2025.04</span>
+              </div>
+              <div class="itemMeta">Mentor: <a href="https://people.csail.mit.edu/ganchuang/" target="_blank" rel="noreferrer">Chuang Gan</a></div>
+              <!-- <ul class="bullets">
+                <li>A</li>
+                <li>B</li>
+              </ul> -->
+            </li>
+            <li class="list__item">
+              <div class="itemTitle">
+                Wang Group — Research Assistant
+                <span class="itemVenue">2023.02 - 2023.08</span>
+              </div>
+              <div class="itemMeta">Mentor: <a href="https://xiaolonw.github.io/" target="_blank" rel="noreferrer">Xiaolong Wang</a></div>
+              <!-- <ul class="bullets">
+                <li>A</li>
+                <li>B</li>
+              </ul> -->
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Blank 1-viewport page after Internship (hide center lane here) -->
+      <section id="blank" class="section section--blank">
+        <footer class="footer">
+          <div class="footer__inner">
+            <span>© <span id="year"></span> Ziyan Xiong</span>
+            <span class="dot">·</span>
+            <span>Built with plain HTML/CSS/JS</span>
+          </div>
+        </footer>
+      </section>
+    </main>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
+
