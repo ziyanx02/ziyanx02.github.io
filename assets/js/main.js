@@ -14,6 +14,12 @@
     "url('../images/4.jpg')",
   ];
 
+  // On mobile, force a single background image.
+  // NOTE: This is still consumed by `background-image: var(--bg-url)` in `assets/css/styles.css`,
+  // so the path must be relative to `assets/css/` (hence `../images/...`).
+  const MOBILE_BACKGROUND_PHOTO = "url('../images/mobile.jpg')";
+  const MOBILE_BREAKPOINT = "(max-width: 820px)";
+
   const prevBtn = $("#bgPrev");
   const nextBtn = $("#bgNext");
 
@@ -71,6 +77,7 @@
             const e = entries[0];
             const fullyVisible = (e && (e.intersectionRatio || 0) >= MOSTLY_VISIBLE_RATIO) || false;
             centerLane.classList.toggle("is-hidden", fullyVisible);
+            document.documentElement.classList.toggle("is-gallery", fullyVisible);
           },
           { root: null, threshold: [0, MOSTLY_VISIBLE_RATIO] }
         );
@@ -89,6 +96,7 @@
           const ratio = visible / Math.max(1, r.height || 1);
           const fullyVisible = ratio >= MOSTLY_VISIBLE_RATIO;
           centerLane.classList.toggle("is-hidden", fullyVisible);
+          document.documentElement.classList.toggle("is-gallery", fullyVisible);
         };
         onScroll();
         window.addEventListener("scroll", onScroll, { passive: true });
@@ -126,14 +134,27 @@
     setPubFilter("all");
 
     // Background setup.
-    if (backgroundPhotos.length > 0) {
-      bgIdx = loadIdx();
-      setBackground(bgIdx);
-    }
+    const mql = window.matchMedia ? window.matchMedia(MOBILE_BREAKPOINT) : null;
+    const isMobile = () => !!(mql && mql.matches);
+
+    const applyBackground = () => {
+      if (isMobile()) {
+        // Force the mobile image and do NOT touch localStorage.
+        document.documentElement.style.setProperty("--bg-url", MOBILE_BACKGROUND_PHOTO);
+        return;
+      }
+
+      if (backgroundPhotos.length > 0) {
+        bgIdx = loadIdx();
+        setBackground(bgIdx);
+      }
+    };
+
+    applyBackground();
 
     // Click zones.
-    if (prevBtn) prevBtn.addEventListener("click", () => stepBackground(-1));
-    if (nextBtn) nextBtn.addEventListener("click", () => stepBackground(1));
+    if (prevBtn) prevBtn.addEventListener("click", () => { if (!isMobile()) stepBackground(-1); });
+    if (nextBtn) nextBtn.addEventListener("click", () => { if (!isMobile()) stepBackground(1); });
 
     // Keyboard support.
     window.addEventListener("keydown", (e) => {
@@ -141,9 +162,17 @@
       const tag = (e.target && e.target.tagName) ? e.target.tagName.toLowerCase() : "";
       if (tag === "input" || tag === "textarea" || tag === "select") return;
 
+      if (isMobile()) return;
       if (e.key === "ArrowLeft") stepBackground(-1);
       if (e.key === "ArrowRight") stepBackground(1);
     });
+
+    // If the viewport crosses the mobile breakpoint (resize / device rotate), update background accordingly.
+    if (mql) {
+      const onMqlChange = () => applyBackground();
+      if (typeof mql.addEventListener === "function") mql.addEventListener("change", onMqlChange);
+      else if (typeof mql.addListener === "function") mql.addListener(onMqlChange); // legacy Safari
+    }
   };
 
   if (document.readyState === "loading") {

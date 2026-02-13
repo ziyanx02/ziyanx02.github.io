@@ -616,11 +616,23 @@ a:hover {
   text-align: center;
   text-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
 }
+
+.footer__hint {
+  width: 100%;
+  flex: 0 0 100%;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  opacity: 0.88;
+}
 .dot {
   opacity: 0.6;
 }
 
 @media (max-width: 820px) {
+  .footer__hint {
+    display: none;
+  }
+
   .bioGrid {
     grid-template-columns: 1fr;
   }
