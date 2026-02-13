@@ -533,8 +533,12 @@ a:hover {
   background: rgba(255, 255, 255, var(--surface-alpha-small));
 }
 
-.bioBlock {
+/* Bio card: intentionally NOT sharing styles with `.list__item` (copied for easier future edits) */
+.bioCard {
   padding: 18px 18px;
+  border-radius: 28px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  background: rgba(255, 255, 255, var(--surface-alpha-small));
 }
 
 .itemTitle {
