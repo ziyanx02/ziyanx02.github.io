@@ -4,16 +4,22 @@
   // Background photo list (replace with your own).
   // Tip: Use images with at least 1920px width for best quality.
   const backgroundPhotos = [
-    "url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=2400&q=80')",
-    "url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=2400&q=80')",
-    "url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=2400&q=80')",
-    "url('https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=2400&q=80')",
+    // NOTE: This value is consumed by `background-image: var(--bg-url)` in `assets/css/styles.css`.
+    // Relative URLs inside `url(...)` are resolved relative to the CSS file, not this JS file.
+    // Since the CSS lives in `assets/css/`, the correct relative path to `assets/images/` is `../images/`.
+    "url('../images/0.jpg')",
+    "url('../images/1.jpg')",
+    "url('../images/2.jpg')",
+    "url('../images/3.jpg')",
+    "url('../images/4.jpg')",
   ];
 
   const prevBtn = $("#bgPrev");
   const nextBtn = $("#bgNext");
 
-  const STORAGE_KEY = "academic_homepage_bg_idx";
+  // Bump the key so existing localStorage values from older versions won't override
+  // the desired default (0.jpg) on first load.
+  const STORAGE_KEY = "academic_homepage_bg_idx_v2";
   let bgIdx = 0;
 
   const loadIdx = () => {
