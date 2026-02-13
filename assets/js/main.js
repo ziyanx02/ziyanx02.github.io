@@ -50,16 +50,6 @@
 
   const stepBackground = (delta) => setBackground(bgIdx + delta);
 
-  // Preload images (best-effort).
-  const preload = () => {
-    for (const cssUrl of backgroundPhotos) {
-      const match = cssUrl.match(/url\(['"]?(.*?)['"]?\)/i);
-      if (!match) continue;
-      const img = new Image();
-      img.src = match[1];
-    }
-  };
-
   const init = () => {
     // Year in footer.
     const yearEl = $("#year");
@@ -69,15 +59,20 @@
     const centerLane = document.querySelector(".centerLane");
     const blankSection = $("#blank");
     if (centerLane && blankSection) {
+      // When navigating via anchor links (e.g. clicking "Gallery"), `scroll-margin-top`
+      // keeps the section slightly below the topbar, so it may never become 99% visible.
+      // Use a "mostly visible" threshold instead.
+      const MOSTLY_VISIBLE_RATIO = 0.97;
+
       if ("IntersectionObserver" in window) {
         const obs = new IntersectionObserver(
           (entries) => {
             // Only hide while the blank page is (almost) fully visible.
             const e = entries[0];
-            const fullyVisible = (e && (e.intersectionRatio || 0) >= 0.99) || false;
+            const fullyVisible = (e && (e.intersectionRatio || 0) >= MOSTLY_VISIBLE_RATIO) || false;
             centerLane.classList.toggle("is-hidden", fullyVisible);
           },
-          { root: null, threshold: [0, 0.99] }
+          { root: null, threshold: [0, MOSTLY_VISIBLE_RATIO] }
         );
         obs.observe(blankSection);
       } else {
@@ -87,9 +82,12 @@
           const h = window.innerHeight || 1;
           const topbar = document.querySelector(".topbar");
           const topbarH = topbar ? topbar.getBoundingClientRect().height : 0;
-          const eps = 2;
-          // Fully visible when it sits under the topbar and reaches the bottom of viewport.
-          const fullyVisible = r.top >= topbarH - eps && r.bottom <= h + eps;
+          // Compute how much of the section is visible within the viewport (excluding the topbar area).
+          const visibleTop = Math.max(r.top, topbarH);
+          const visibleBottom = Math.min(r.bottom, h);
+          const visible = Math.max(0, visibleBottom - visibleTop);
+          const ratio = visible / Math.max(1, r.height || 1);
+          const fullyVisible = ratio >= MOSTLY_VISIBLE_RATIO;
           centerLane.classList.toggle("is-hidden", fullyVisible);
         };
         onScroll();
@@ -131,7 +129,6 @@
     if (backgroundPhotos.length > 0) {
       bgIdx = loadIdx();
       setBackground(bgIdx);
-      preload();
     }
 
     // Click zones.

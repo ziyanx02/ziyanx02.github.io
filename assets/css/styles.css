@@ -2,7 +2,7 @@
   --bg-url: none;
   --surface-alpha: 0.4;
   /* Small blocks inside sections: chips / publication items / project mini cards */
-  --surface-alpha-small: 0.7;
+  --surface-alpha-small: 0.6;
   --surface-alpha-small-hover: 1.0;
   --safe-top: max(env(safe-area-inset-top), 0px);
   --topbar-h: 64px;
@@ -282,8 +282,17 @@ a:hover {
 .section--blank {
   min-height: calc(100svh - var(--topbar-total-h));
   padding: 0;
-  display: flex;
-  align-items: flex-end;
+  /* Make the last screen a positioning context for the footer */
+  position: relative;
+}
+
+/* On the blank (Gallery) page keep it bottom-centered, with a tighter bottom padding. */
+.section--blank .footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 18px;
+  padding: 0;
 }
 
 .section--bio {
@@ -589,17 +598,22 @@ a:hover {
 }
 
 .footer {
-  padding: 34px 0 52px 0;
+  /* Closer to the bottom edge */
+  padding: 14px 0 22px 0;
 }
 .footer__inner {
-  width: var(--content-w);
+  /* Center within the viewport and allow it to sit closer to the side edges */
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 0 18px;
   color: rgba(255, 255, 255, 0.82);
   display: flex;
   gap: 10px;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  text-align: center;
   text-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
 }
 .dot {
