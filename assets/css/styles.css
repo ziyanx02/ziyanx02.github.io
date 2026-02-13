@@ -629,7 +629,37 @@ a:hover {
 }
 
 @media (max-width: 820px) {
+  /* Mobile: tighten spacing between sections */
+  .section {
+    padding: 6px 0;
+  }
+
   .footer__hint {
+    display: none;
+  }
+
+  /* Mobile: hide the scroll cue (and its animation) */
+  .scrollCue {
+    display: none;
+  }
+
+  /* Mobile: make the center lane span the full viewport width */
+  .centerLane {
+    left: 0;
+    transform: none;
+    width: 100vw;
+    border-left: 0;
+    border-right: 0;
+  }
+
+  /* Mobile: main content should be full width */
+  .contentCard {
+    width: 100%;
+    padding: 20px 16px;
+  }
+
+  /* Mobile: no need for background photo nav zones */
+  .bgNav {
     display: none;
   }
 
@@ -640,9 +670,6 @@ a:hover {
     width: 160px;
     height: 160px;
     border-radius: 26px;
-  }
-  .contentCard {
-    padding: 20px 18px;
   }
 }
 
